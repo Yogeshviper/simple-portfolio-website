@@ -1,25 +1,28 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background: #35424a;
+    color: #ffffff;
     padding: 20px 0;
-    text-align: center;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -29,86 +32,58 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 section {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 h2 {
-    text-align: center;
-    color: #333;
+    color: #35424a;
 }
 
-/* About Section */
-#about img {
-    display: block;
-    margin: 20px auto;
-    width: 150px;
-    border-radius: 50%;
-}
-
-#about p {
-    text-align: center;
-    color: #555;
-}
-
-/* Projects Section */
 .project-list {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project {
-    background-color: white;
+    border: 1px solid #ccc;
     padding: 20px;
-    width: 45%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
 }
 
-/* Contact Section */
+.project h3 {
+    color: #35424a;
+}
+
 form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-label {
-    display: block;
+form label {
     margin-top: 10px;
-    color: #333;
 }
 
-input, textarea {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #333;
-    color: white;
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
-}
-
-/* Success/Error message */
-#form-message {
-    margin-top: 10px;
-    font-weight: bold;
+form button:hover {
+    background: #495057;
 }
